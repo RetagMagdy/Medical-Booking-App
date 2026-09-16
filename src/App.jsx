@@ -8,6 +8,7 @@ import DoctorDetails from "./pages/DoctorDetails";
 import BookAppointment from "./pages/BookAppointment";
 import MyAppointments from "./pages/MyAppointments";
 import Profile from "./pages/Profile";
+import AIAssistant from "./pages/AIAssistant";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -18,7 +19,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        <Route path="/doctors" element={<Doctors />} />
+        <Route
+          path="/doctors"
+          element={<Doctors />}
+        />
 
         <Route
           path="/doctors/:id"
@@ -38,6 +42,11 @@ function App() {
         <Route
           path="/profile"
           element={<Profile />}
+        />
+
+        <Route
+          path="/ai-assistant"
+          element={<AIAssistant />}
         />
 
         <Route
